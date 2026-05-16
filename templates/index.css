@@ -1,0 +1,8 @@
+.thebox
+{ 
+    color: red;
+    border: 5px solid black;
+    background-color: grey;
+    width: 300px;
+    margin-left:500px ;
+}

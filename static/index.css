@@ -1,0 +1,32 @@
+            body {
+            background-image: url("cc.webp");   
+            background-repeat: no-repeat;
+            background-size: cover;             
+            background-attachment: fixed;       
+            }
+
+           .thebox
+            { 
+                color: red;
+                border: 5px;
+                border-radius: 10px;
+                background-color: transparent;
+                width: 300px;
+                margin:auto;
+                padding:10px;
+                text-align: center;
+
+            }
+            .button:hover
+
+            {
+              background-color: orange;
+              border-spacing: inherit;
+              border-radius: 5px;
+            }
+            .result
+
+            {
+                width: 300px;
+                margin: auto;
+            }

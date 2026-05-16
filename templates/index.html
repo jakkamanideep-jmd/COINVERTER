@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">      
+           
+    </head>
+    <body>
+        <h1 style="margin-left: 350px;">CURRENCYCONVERTER</h1>    
+
+        <div class="thebox">
+        <form method="POST">
+        <table style="padding-left: 60px;">
+            <tr><td><input type="text" name="amount" placeholder="Amount"></td></tr>
+            <tr><td><input type="text" name="from" placeholder="From Currency"></td></tr>
+            <tr><td><input type="text" name="to" placeholder="To Currency"></td></tr>
+   
+        </table>
+                 <button type="submit" class="button">Convert</button>
+        </form>
+    
+    </div>
+    <div class="result">
+    {% if result %}
+        <p>Converted Amount: {{ result }}</p>
+    {% endif %}
+    </div>
+</body>
+</html>
