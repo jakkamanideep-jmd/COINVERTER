@@ -12,9 +12,9 @@ def home():
         from_currency = request.form["from"]
         to_currency = request.form["to"]
         result = c.convert(amount, from_currency, to_currency)
-        return redirect(url_for('home',result=result))
+        return redirect(url_for('home',results=result))
     result=request.args.get("result")
-    return render_template('index.html',result=result)
+    return render_template('index.html',results=result)
     
 
 if __name__ == "__main__":
